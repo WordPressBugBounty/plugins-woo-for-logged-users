@@ -61,10 +61,10 @@ function wflu_enqueue_admin( $hook ) {
 add_action( 'admin_enqueue_scripts', 'wflu_enqueue_admin', 100 );
 
 /**
- * Add submenu in WooCommerce -> WooCommerce for logged users
+ * Add submenu in WooCommerce -> Require Login for WooCommerce
  */
 function wflu_add_admin_menu() {
-	add_submenu_page( 'woocommerce', 'WooCommerce for logged-in users', 'WooCommerce for logged-in users', 'manage_options', 'woocommerce_for_logged_users', 'wflu_options_page' );
+	add_submenu_page( 'woocommerce', 'Require Login for WooCommerce', 'Require Login for WooCommerce', 'manage_options', 'woocommerce_for_logged_users', 'wflu_options_page' );
 }
 add_action( 'admin_menu', 'wflu_add_admin_menu' );
 

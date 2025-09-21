@@ -130,7 +130,7 @@ function App() {
 		<div>
 			<h1>
 				{ __(
-					'WooCommerce for logged-in users',
+					'Require Login for WooCommerce',
 					'woo-for-logged-in-users'
 				) }
 			</h1>
